@@ -28245,7 +28245,7 @@ var App = React.createClass({ displayName: "App",
   render: function render() {
 
     var rows = [];
-    rows.push(React.createElement(Col, { md: 2, key: "placeholder", className: "placeholder" }, React.createElement("div", null, React.createElement("img", { src: "/images/logo.png" }), React.createElement("h2", null, "#DunneBurgess"))));
+    rows.push(React.createElement(Col, { sm: 2, key: "placeholder", className: "placeholder" }, React.createElement("div", null, React.createElement("img", { src: "/images/logo.png" }), React.createElement("h2", null, "#DunneBurgess"))));
 
     for (var i = 0; i < this.state.images.length; i++) {
       rows.push(React.createElement(InstagramImage, { key: this.state.images[i].id, instagramId: this.state.images[i].link }));
@@ -28387,9 +28387,9 @@ var InstagramImage = React.createClass({ displayName: "InstagramImage",
     var url = this.props.instagramId + "media";
 
     if (this.state.loaded) {
-      return React.createElement(Col, { md: 2, className: "instagramImage col fade-in" }, React.createElement("img", { src: "/images/mask.png", className: "mask" }), React.createElement("img", { src: url, width: "100%" }));
+      return React.createElement(Col, { sm: 2, className: "instagramImage col fade-in" }, React.createElement("img", { src: "/images/mask.png", className: "mask" }), React.createElement("img", { src: url, width: "100%" }));
     } else {
-      return React.createElement(Col, { md: 2, className: "instagramImage col hide" }, React.createElement("img", { src: "/images/mask.png", className: "mask" }));
+      return React.createElement(Col, { sm: 2, className: "instagramImage col hide" }, React.createElement("img", { src: "/images/mask.png", className: "mask" }));
     }
   }
 });

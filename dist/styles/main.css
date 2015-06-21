@@ -5323,11 +5323,18 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    text-align: center; }
+    text-align: center;
+    max-width: 100%; }
     .placeholder div h2 {
       color: black;
-      font-size: 25px;
+      font-size: 18px;
       margin-top: 5px; }
+      @media (min-width: 910px) {
+        .placeholder div h2 {
+          font-size: 20px; } }
+      @media (min-width: 1160px) {
+        .placeholder div h2 {
+          font-size: 25px; } }
     .placeholder div img {
       max-width: 80%;
       margin-top: 10%;

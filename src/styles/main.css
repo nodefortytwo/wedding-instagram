@@ -43,12 +43,20 @@ body{
 		top:0;
 		left:0;
 		text-align:center;
+		max-width:100%;
 
 		h2{
 			color:black;
-			font-size:25px;
+			font-size:18px;
 			margin-top:5px;
 			
+			@media (min-width:910px) { 
+				font-size:20px;
+			}
+
+			@media (min-width:1160px) { 
+				font-size:25px;
+			}
 		}
 
 		img{

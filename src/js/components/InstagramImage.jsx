@@ -28,14 +28,14 @@ var InstagramImage = React.createClass({
 
   	if (this.state.loaded) {
 	    return (
-	    	<Col md={2} className="instagramImage col fade-in">
+	    	<Col sm={2} className="instagramImage col fade-in">
 	    		<img src="/images/mask.png" className="mask"/>
 	    		<img src={url} width="100%"/>
 	    	</Col>
 	    );
 	}else{
 		return (
-	    	<Col md={2} className="instagramImage col hide">
+	    	<Col sm={2} className="instagramImage col hide">
 	    		<img src="/images/mask.png" className="mask"/>
 	    		
 	    	</Col>

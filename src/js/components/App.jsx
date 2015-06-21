@@ -67,7 +67,7 @@ var App = React.createClass({
   render: function() {
 
     var rows = [];
-    rows.push(<Col md={2} key="placeholder" className="placeholder"><div><img src="/images/logo.png"/><h2>#DunneBurgess</h2></div></Col>);
+    rows.push(<Col sm={2} key="placeholder" className="placeholder"><div><img src="/images/logo.png"/><h2>#DunneBurgess</h2></div></Col>);
 
     for (var i=0; i < this.state.images.length; i++) {
         rows.push(<InstagramImage key={this.state.images[i].id} instagramId={this.state.images[i].link} />);
